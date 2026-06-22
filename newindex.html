@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>東洋都交通局在線システム</title>
+        <style>
+            body{
+                background-color: rgb(49, 49, 49)
+            };
+        </style>
+    </head>
+    <body>
+        <div id="svgDiv">
+        <svg id="svgCanvas" width="1720" height="800">
+            <!-- 新線新坂 -->
+            <line id = "niizaka3" x1="30" y1="150" x2="150" y2="150" stroke="white" stroke-width="3" />
+            <line id = "niizaka2" x1="30" y1="200" x2="150" y2="200" stroke="white" stroke-width="3" />
+            <line id = "niizaka1" x1="30" y1="250" x2="150" y2="250" stroke="white" stroke-width="3" />
+            <text x="90" y="180" font-size="15" font-weight="bold" text-anchor="middle" fill="white">新線新坂</text>
+            <!-- 新線新坂 - 地下鉄東台 -->
+            <line x1="150" y1="150" x2="200" y2="170" stroke="white" stroke-width="3" />
+            <line x1="150" y1="200" x2="200" y2="230" stroke="white" stroke-width="3" />
+            <line x1="150" y1="200" x2="200" y2="170" stroke="white" stroke-width="3" />
+            <line x1="150" y1="250" x2="200" y2="230" stroke="white" stroke-width="3" />
+            <line id = "niizaka-azumadai" x1="200" y1="170" x2="300" y2="170" stroke="white" stroke-width="3" />
+            <line id = "azumadai-niizaka" x1="200" y1="230" x2="300" y2="230" stroke="white" stroke-width="3" />
+            <line x1="300" y1="170" x2="350" y2="130" stroke="white" stroke-width="3" />
+            <line x1="300" y1="230" x2="350" y2="270" stroke="white" stroke-width="3" />
+            <!-- 地下鉄東台 -->
+            <line x1="350" y1="130" x2="400" y2="170" stroke="white" stroke-width="3" />
+            <line x1="350" y1="270" x2="400" y2="230" stroke="white" stroke-width="3" />
+            <line x1="350" y1="130" x2="400" y2="130" stroke="white" stroke-width="3" />
+            <line x1="350" y1="270" x2="400" y2="270" stroke="white" stroke-width="3" />
+            <line id = "azumadai2" x1="400" y1="170" x2="500" y2="170" stroke="white" stroke-width="3" />
+            <line id = "azumadai1" x1="400" y1="230" x2="500" y2="230" stroke="white" stroke-width="3" />
+            <line id = "azumadai2pass" x1="400" y1="130" x2="550" y2="130" stroke="white" stroke-width="3" />
+            <line id = "azumadai1pass" x1="400" y1="270" x2="550" y2="270" stroke="white" stroke-width="3" />
+            <text x="450" y="205" font-size="15" font-weight="bold" text-anchor="middle" fill="white">地下鉄東台</text>
+            <line x1="500" y1="170" x2="550" y2="130" stroke="white" stroke-width="3" />
+            <line x1="500" y1="230" x2="550" y2="270" stroke="white" stroke-width="3" />
+            <line x1="550" y1="130" x2="600" y2="170" stroke="white" stroke-width="3" />
+            <line x1="550" y1="270" x2="600" y2="230" stroke="white" stroke-width="3" />
+            <!-- 地下鉄東台 - 荒江坂 -->
+            <line id = "azumadai-araesaka" x1="600" y1="170" x2="700" y2="170" stroke="white" stroke-width="3" />
+            <line id = "araesaka-azumadai" x1="600" y1="230" x2="700" y2="230" stroke="white" stroke-width="3" />
+            <!-- 荒江坂 -->
+            <line id = "araesaka2" x1="700" y1="170" x2="800" y2="170" stroke="white" stroke-width="3" />
+            <line id = "araesaka1" x1="700" y1="230" x2="800" y2="230" stroke="white" stroke-width="3" />
+            <text x="750" y="205" font-size="15" font-weight="bold" text-anchor="middle" fill="white">荒江坂</text>
+            <!-- 荒江坂 - 臨海公園通り -->
+            <line id = "araesaka-rinkai" x1="800" y1="170" x2="900" y2="170" stroke="white" stroke-width="3" />
+            <line id = "rinkai-araesaka" x1="800" y1="230" x2="900" y2="230" stroke="white" stroke-width="3" />
+            <!-- 臨海公園通り -->
+            <line id = "rinkai2" x1="900" y1="170" x2="1000" y2="170" stroke="white" stroke-width="3" />
+            <line id = "rinkai1" x1="900" y1="230" x2="1000" y2="230" stroke="white" stroke-width="3" />
+            <text x="950" y="205" font-size="15" font-weight="bold" text-anchor="middle" fill="white">臨海公園通り</text>
+            <!-- 臨海公園通り - 七島台場 -->
+            <line id = "rinkai-nanasima" x1="1000" y1="170" x2="1100" y2="170" stroke="white" stroke-width="3" />
+            <line id = "nanasima-rinkai" x1="1000" y1="230" x2="1100" y2="230" stroke="white" stroke-width="3" />
+            <!-- 七島台場 -->>
+            <line id = "nanasima2" x1="1100" y1="170" x2="1200" y2="170" stroke="white" stroke-width="3" />
+            <line id = "nanasima1" x1="1100" y1="230" x2="1200" y2="230" stroke="white" stroke-width="3" />
+            <text x="1150" y="205" font-size="15" font-weight="bold" text-anchor="middle" fill="white">七島台場</text>
+            <!-- 七島台場 - 玲田橋 -->
+            <line id = "nanasima-reida" x1="1200" y1="170" x2="1300" y2="170" stroke="white" stroke-width="3" />
+            <line id = "reida-nanasima" x1="1200" y1="230" x2="1300" y2="230" stroke="white" stroke-width="3" />
+            <!-- 玲田橋 -->>
+            <line x1="1300" y1="170" x2="1350" y2="130" stroke="white" stroke-width="3" />
+            <line x1="1300" y1="230" x2="1350" y2="270" stroke="white" stroke-width="3" />
+            <line x1="1300" y1="170" x2="1350" y2="170" stroke="white" stroke-width="3" />
+            <line x1="1300" y1="230" x2="1350" y2="230" stroke="white" stroke-width="3" />
+            <line id = "reida6" x1="1350" y1="130" x2="1450" y2="130" stroke="white" stroke-width="3" />
+            <line id = "reida3" x1="1350" y1="270" x2="1450" y2="270" stroke="white" stroke-width="3" />
+            <line id = "reida5" x1="1350" y1="170" x2="1450" y2="170" stroke="white" stroke-width="3" />
+            <line id = "reida4" x1="1350" y1="230" x2="1450" y2="230" stroke="white" stroke-width="3" />
+            <text x="1400" y="205" font-size="15" font-weight="bold" text-anchor="middle" fill="white">玲田橋</text>
+            
+        </svg>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
