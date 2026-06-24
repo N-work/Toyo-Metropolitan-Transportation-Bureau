@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>東洋都交通局在線システム</title>
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                height: 95%;
+            }
+
+            body {
+                background-color: rgb(49, 49, 49);
+                display: flex;
+                flex-direction: column;
+            }
+
+            .message-container {
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            h1, p {
+                color: white;
+                text-align: center;
+                margin: 10px 0;
+            }
+
+            a, img {
+                position: relative;
+                z-index: 10;
+            }
+
+            img {
+                position: absolute;
+                top: 5px;
+                left: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="locateindex.html"><img src="TOPIMG.png" width="650" height="102"></a>
+        <div class="message-container">
+            <h1>お探しのページは見つかりません。</h1>
+            <h1>各部管理課を通して情報システム開発部（鉄道電話41504）にお知らせください。</h1>
+            <p>404 Page Not Found</p>
+        </div>
+    </body>
+</html>
